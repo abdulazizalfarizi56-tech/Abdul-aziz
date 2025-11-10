@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pembelian 🛒</h1>
+        <form action="#" method="post">
+            
+            <section class="section-box">
+                <h2>📦 Informasi Pengiriman</h2>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Lengkap</label>
+                    <textarea id="alamat" name="alamat" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="kota">Kota/Kabupaten</label>
+                    <input type="text" id="kota" name="kota" required>
+                </div>
+                <div class="form-group">
+                    <label for="kode-pos">Kode Pos</label>
+                    <input type="text" id="kode-pos" name="kode-pos" pattern="[0-9]{5}" title="Harus 5 digit angka" required>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section class="section-box">
+                <h2>💳 Detail Pembayaran</h2>
+                <div class="form-group">
+                    <label for="metode">Metode Pembayaran</label>
+                    <select id="metode" name="metode" required>
+                        <option value="">Pilih Metode</option>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="kartu">Kartu Kredit/Debit</option>
+                        <option value="cod">Bayar di Tempat (COD)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="catatan">Catatan Tambahan (Opsional)</label>
+                    <textarea id="catatan" name="catatan" rows="2"></textarea>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <div class="summary">
+                <h3>Total Pembayaran: **Rp 150.000**</h3>
+            </div>
+            
+            <button type="submit" class="submit-button">Lanjutkan ke Pembayaran</button>
+            
+        </form>
+    </div>
+</body>
+</html>
